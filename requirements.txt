@@ -1,0 +1,5 @@
+meshzoo==0.4.3
+scikit-image==0.14.2
+natsort==7.0.0
+scipy==1.1.0
+tensorboardX==1.6
