@@ -1,4 +1,4 @@
-# Differential image reblur layer
+# Differential reblur package
 
 This repository contains a custom pytorch package that reblur a sharp image with dense optical flow blur kernels as described in "Self-supervised Linear Motion Deblurring"
 
