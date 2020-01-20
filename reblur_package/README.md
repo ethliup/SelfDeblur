@@ -1,8 +1,23 @@
+# Differential image reblur layer
+
 This repository contains a custom pytorch package that reblur a sharp image with dense optical flow blur kernels as described in "Self-supervised Linear Motion Deblurring"
 
-To install:
+## To install:
+```
+python setup install
+```
 
-Run 'python setup install'
+## Usage:
+```
+from reblur_package import FlowBlurrer
+
+Max_blur_kernel_size_in_pixels=30
+B,C,H,W = im_sharp.size()
+flow = torch.ones([B, 2, H, W]).float().cuda()
+
+flow_blurrer = FlowBlurrer.create_with_implicit_mesh(B, C, H, W, Max_blur_kernel_size_in_pixels)
+im_blur, mask = flow_blurrer(im_sharp, flow)
+```
 
 If you find this implementation useful in your work, please acknowledge it appropriately and cite the paper:
 ```
