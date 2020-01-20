@@ -1,9 +1,28 @@
+# Differentiable correlation package
+
 This repository contains a custom pytorch package that adds a module and functional interface for the correlation layer described in "FlowNet: Learning Optical Flow with Convolutional Networks" (https://arxiv.org/abs/1504.06852)
 
-To install:
+## To install:
+```
+python setup install
+```
 
-Run 'python setup install'
+## Usages:
+```
+from correlation_package import Correlation
 
+A = Variable(torch.randn(2,3,100,100), requires_grad=True)
+A_ = A.cuda().float()
+B = Variable(torch.randn(2,3,100,100), requires_grad=True)
+B_ = B.cuda().float()
+
+corr_AB = Correlation(pad_size=3,
+                      kernel_size=3,
+                      max_displacement=20,
+                      stride1=1,
+                      stride2=1,
+                      corr_multiply=1)(A_, B_)
+```
 
 #### Acknowledgement
 - We improve the original repository from Dr. Jinwei Gu for better structure and to support Pytorch versions which are higher than 0.4.0
