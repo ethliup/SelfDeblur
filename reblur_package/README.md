@@ -19,7 +19,8 @@ flow_blurrer = FlowBlurrer.create_with_implicit_mesh(B, C, H, W, Max_blur_kernel
 im_blur, mask = flow_blurrer(im_sharp, flow)
 ```
 
-If you find this implementation useful in your work, please acknowledge it appropriately and cite the paper:
+#### Acknowledgement
+If you find this implementation useful for your work, please acknowledge it appropriately and cite the paper:
 ```
 @article{LiuRAS2020,
   author = {Peidong Liu and Joel Janai and Marc Pollefeys and Torsten Sattler and Andreas Geiger},
