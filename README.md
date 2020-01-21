@@ -53,9 +53,17 @@ bash demo.sh
 ```
 
 ## Datasets
-In this work, we proposed two new datasets. The synthetic dataset
-(i.e., Fastec dataset) is synthesized with a high speed global
-shutter camera (~1200 FPS). The camera is mounted on a ground vehicle.
+If you want to evaluate your/our algorithm with our proposed datasets, you
+can download them as follows.
+
+* [Fastec training data](https://drive.google.com/open?id=1tt2sVXaGKffE1zEh0Z0pS_ecFFDP6cBn):
+  the training data (~6G) from the synthetic Fastec dataset.
+
+* [Fastec test data](https://drive.google.com/open?id=1Duf_lVR5zqSPGB1feghWyzQ5IDxrabZU):
+  the test data (~2G) from the synthetic Fastec dataset.
+
+* [Real dataset](https://drive.google.com/open?id=1TlfY276GyJ3XoSQUmru9Lz-WKFYX7y7l):
+  the real dataset (~379MB) which contains both the training data and test data.
 
 ## Evaluation with our pretrained model
 
