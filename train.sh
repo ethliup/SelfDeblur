@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # !! Updata the path to the datasets with your own local path !!
-root_path_training_data=/home/peidong/leonhard/project/infk/cvg/liup/mydata/Fastec_full/motion_blur/real_blur_avg_high_FPS_frames/train #/path
-log_dir_deblur_net=/home/peidong/leonhard/project/infk/cvg/liup/logs/deblur/net_deblur_blur2blur # /path
-log_dir_flow_net=/home/peidong/leonhard/project/infk/cvg/liup/logs/deblur/net_flow_self_blur # /path
-log_dir_self_deblur_net=/home/peidong/leonhard/project/infk/cvg/liup/logs/deblur/net_self_deblur # /path
+root_path_training_data=/path
+log_dir_deblur_net=/path
+log_dir_flow_net=/path
+log_dir_self_deblur_net=/path
 
 #
 cd self_deblur_net
