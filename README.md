@@ -10,7 +10,7 @@ supervision. During inference, our network takes a single blurry image
 as an input and procude the corresponding sharp estimate, as in the
 following examples:
 
-<img src="demo/demo_fastec.gif" height="280px"/> <img src="demo/demo_real.gif" height="280px"/>
+<img src="teaser_img/fastec.gif" height="280px"/> <img src="teaser_img/real.gif" height="280px"/>
 
 You can find detailed usage instructions for training your own models
 and using pretrained models below.
