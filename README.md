@@ -66,6 +66,16 @@ can download them as follows.
   the real dataset (~379MB) which contains both the training data and test data.
 
 ## Evaluation with our pretrained model
+If you want to re-produce the same experimental results as what our paper demonstrates,
+please download the Fastect test data and the real dataset to your local computer.
+
+Then you can run following commands to get the results.
+```
+bash download_pretrained_models.sh
+# !! Please update the path to test data in 'evaluate_pretrained.sh'
+# !! with your own local path, before run following command!!
+bash evaluate_pretrained.sh
+```
 
 ## Training with our datasets
 

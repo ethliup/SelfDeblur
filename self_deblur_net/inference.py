@@ -27,21 +27,14 @@ parser.add_argument('--crop_sz_H', type=int, default=480, help='cropped image si
 parser.add_argument('--crop_sz_W', type=int, default=640, help='cropped image size width')
 parser.add_argument('--model_label', type=str, default='500', help='label used to load pre-trained model')
 
-parser.add_argument('--lambda_lr', type=float, default=2.0)
-parser.add_argument('--lambda_img_tv', type=float, default=0.)
-parser.add_argument('--lambda_flow_tv', type=float, default=0.)
-parser.add_argument('--reblur_model', type=str, default='reblur_mesh') # either 'reblur_mesh' or 'reblur_conv'
-
-parser.add_argument('--dataset_type', type=str, required=True)
 parser.add_argument('--dataset_root_dir', type=str, required=True)
 parser.add_argument('--log_dir', type=str, required=True)
+parser.add_argument('--results_dir', type=str, required=True, help='directory used to store experimental results')
 
 parser.add_argument('--compute_metrics', action='store_true')
 parser.add_argument('--save_images', action='store_true')
 
 opts=parser.parse_args()
-
-opts.log_dir+=('/'+opts.dataset_type+'_'+opts.reblur_model+'_lambda_im_tv_'+str(opts.lambda_img_tv)+'_lambda_flow_tv_'+str(opts.lambda_flow_tv))
 
 ##===================================================##
 ##*************** Create dataloader *****************##
