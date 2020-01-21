@@ -77,7 +77,7 @@ class Generic_train_test():
 		f_metric_all=None
 		f_metric_avg=None
 		n_frames=0
-		dir_results=os.path.join(self.opts.log_dir, 'experiments_'+self.opts.model_label)
+		dir_results=os.path.join(self.opts.results_dir)
 		if not os.path.exists(dir_results):
 			os.makedirs(dir_results)
 
