@@ -24,4 +24,6 @@ python inference.py \
             --dataset_root_dir=$root_path_real_test_data \
             --model_label='Real_pretrained' \
             --log_dir=../experiments/pretrained_models \
-            --results_dir=../experiments/results_full_real
+            --results_dir=../experiments/results_full_real \
+            --crop_sz_H=448 \
+            --crop_sz_W=704 
