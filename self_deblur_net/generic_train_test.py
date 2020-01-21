@@ -2,6 +2,7 @@ import os
 import time
 from metrics import *
 from skimage import io
+from image_proc import *
 
 class Generic_train_test():
 	def __init__(self, model, opts, dataloader, logger):
@@ -58,13 +59,13 @@ class Generic_train_test():
 
 		# save images 
 		if self.opts.save_images:
-			np_im_in = self.model.im_blur.detach().cpu().numpy().transpose(0,2,3,1)[0].clip(0.,1.)
-			np_im_pred = im_pred.detach().cpu().numpy().transpose(0,2,3,1)[0].clip(0.,1.)
+			np_im_in = white_balance(self.model.im_blur.detach().cpu().numpy().transpose(0,2,3,1)[0].clip(0.,1.))
+			np_im_pred = white_balance(im_pred.detach().cpu().numpy().transpose(0,2,3,1)[0].clip(0.,1.))
 			
 			io.imsave(os.path.join(dir_results, '%04d_blur.png' % i), np_im_in)
 			io.imsave(os.path.join(dir_results, '%04d_pred.png' % i), np_im_pred)
 			if self.opts.compute_metrics:
-				np_im_gt = self.model.im_target.detach().cpu().numpy().transpose(0,2,3,1)[0].clip(0.,1.)
+				np_im_gt = white_balance(self.model.im_target.detach().cpu().numpy().transpose(0,2,3,1)[0].clip(0.,1.))
 				io.imsave(os.path.join(dir_results, '%04d_gt.png' % i), np_im_gt)
 
 		return im_pred, diff_time

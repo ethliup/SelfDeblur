@@ -45,6 +45,12 @@ python setup.py install
 ```
 
 ## Demo with our pretrained model
+You can now test our code with the provided images in the `demo` folder.
+To do this, simply run
+```
+bash download_pretrained_models.sh
+bash demo.sh
+```
 
 ## Datasets
 In this work, we proposed two new datasets. The synthetic dataset

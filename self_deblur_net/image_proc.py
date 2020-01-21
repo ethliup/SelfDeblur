@@ -1,6 +1,18 @@
+import cv2
 import torch
 import numpy as np
 import torch.nn as nn
+
+def white_balance(img):
+    img = (img*255.).astype(np.uint8)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
+    avg_a = np.average(img[:, :, 1])
+    avg_b = np.average(img[:, :, 2])
+    img[:, :, 1] = img[:, :, 1] - ((avg_a - 128) * (img[:, :, 0] / 255.0) * 1.1)
+    img[:, :, 2] = img[:, :, 2] - ((avg_b - 128) * (img[:, :, 0] / 255.0) * 1.1)
+    img = cv2.cvtColor(img, cv2.COLOR_LAB2BGR)
+    img = img.astype(np.float)/255.
+    return img
 
 def warp_image_flow(ref_image, flow):
     [B, _, H, W] = ref_image.size()
