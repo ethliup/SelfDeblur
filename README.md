@@ -78,6 +78,16 @@ bash evaluate_pretrained.sh
 ```
 
 ## Training with our datasets
+If you want to re-train the network with our proposed datasets, please download
+the Fastec training data and the real dataset to your local computer.
+
+The you can run following commands to re-train the models.
+```
+# !! Please update the corresponding paths in 'train.sh' with  #
+# !! your own local paths, before run following command!!      #
+
+bash train.py
+```
 
 ## Training with your own dataset
 

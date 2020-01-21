@@ -37,13 +37,10 @@ parser.add_argument('--lambda_lr', type=float, default=2.0)
 parser.add_argument('--lambda_img_tv', type=float, default=0.)
 parser.add_argument('--lambda_flow_tv', type=float, default=0.)
 
-parser.add_argument('--dataset_type', type=str, required=True)
 parser.add_argument('--dataset_root_dir', type=str, required=True)
 parser.add_argument('--log_dir', type=str, required=True)
 
 opts=parser.parse_args() 
-
-opts.log_dir+=('/'+opts.dataset_type+'_lambda_im_tv_'+str(opts.lambda_img_tv)+'_lambda_flow_tv_'+str(opts.lambda_flow_tv))
 
 ##===================================================##
 ##*************** Create dataloader *****************##
