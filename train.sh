@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# !! Updata the path to the datasets with your own local path !!
+# !! Updata the path to the dataset and directory to 
+# !! save your trained models with your own local path !!
 root_path_training_data=/path
 log_dir_deblur_net=/path
 log_dir_flow_net=/path
