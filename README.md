@@ -22,7 +22,7 @@ If you find our code or paper useful, please consider citing:
 ```
 @article{LiuRAS2020,
   author = {Peidong Liu and Joel Janai and Marc Pollefeys and Torsten Sattler and Andreas Geiger},
-  title = {Self-supervised Linear Motion Deblurring},
+  title = {Self-Supervised Linear Motion Deblurring},
   journal = {Robotics and Automation Letters},
   year = {2020}
 }
