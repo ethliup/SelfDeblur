@@ -25,7 +25,6 @@ class ModelSelfFlowNet(ModelBase):
         self.upsampleX4 = nn.Upsample(scale_factor=4, mode='nearest')
         self.downsampleX2 = nn.AvgPool2d(2, stride=2)
         
-        # initialize mesh faces
         if opts.is_training:
             # initialize optimizers
             self.optimizer_G = torch.optim.Adam(self.net_flow.parameters(), lr=opts.lr)

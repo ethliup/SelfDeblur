@@ -38,8 +38,6 @@ parser.add_argument('--blur2blur', action='store_true')
 
 opts=parser.parse_args()
 
-torch.cuda.set_device(1)
-
 ##===================================================##
 ##*************** Create dataloader *****************##
 ##===================================================##

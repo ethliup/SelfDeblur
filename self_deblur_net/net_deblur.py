@@ -47,4 +47,3 @@ class Deblur_net(nn.Module):
 
         return im_sharp
 
-net=Deblur_net(3, 64, 3)
