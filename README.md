@@ -10,7 +10,7 @@ We present a differentiable reblur model for self-supervised motion
 deblurring. We are able to train the networks with two consecutive
 blurry images and do not require any ground truth sharp image for
 supervision. During inference, our network takes a single blurry image
-as an input and procude the corresponding sharp estimate, as in the
+as an input and produce the corresponding sharp estimate, as in the
 following examples:
 
 <img src="teaser_img/fastec.gif" height="280px"/> <img src="teaser_img/real.gif" height="280px"/>
