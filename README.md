@@ -18,7 +18,7 @@ following examples:
 You can find detailed usage instructions for training your own models
 and using pretrained models below.
 
-If you find our code or paper useful, please consider citing:
+If you find our code, datatsets or paper useful, please consider citing:
 ```
 @article{LiuRAS2020,
   author = {Peidong Liu and Joel Janai and Marc Pollefeys and Torsten Sattler and Andreas Geiger},
