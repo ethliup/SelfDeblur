@@ -106,7 +106,7 @@ entries can be:
 # as exposure time)                                                                    #
 #--------------------------------------------------------------------------------------#
 # The image path is the relative path with respect to the 'paired_image_list.log' file #
-# Please use '*' to seperate two difference sequences.                                 #
+# Please use '*' to seperate two different sequences.                                  #
 #--------------------------------------------------------------------------------------#
 * Sequence_01
 seq01_im_blur_0.png seq01_im_sharp_0.png 0.02 0.05
