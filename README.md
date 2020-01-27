@@ -97,17 +97,17 @@ If you want to train our network with your own dataset, please prepare a
 `paired_image_list.log` file in both your training data root folder and
 test data root folder. The format is defined as follows. Assuming you have
 two sequences of images, i.e., Sequence_01 and Sequence_02, example file
-entries can be
+entries can be:
 ```
-#-------------------------------------------------------------------------------------------------------------------#
-#                                                 File 'paired_image_list.log'                                                #
-#-------------------------------------------------------------------------------------------------------------------#
-#  im_blurry_path, im_sharp_path, exposure_time and timestamp (in the same unit
-#  as exposure time)
-#-------------------------------------------------------------------------------------------------------------------#
-# The image path is the relative path with respect to the 'paired_image_list.log' file#
-# Please use '*' to seperate two difference sequences.                                                   #
-#-------------------------------------------------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------#
+#                          File 'paired_image_list.log'                                #
+#--------------------------------------------------------------------------------------#
+# im_blurry_path, im_sharp_path, exposure_time and timestamp (in the same unit         #
+# as exposure time)                                                                    #
+#--------------------------------------------------------------------------------------#
+# The image path is the relative path with respect to the 'paired_image_list.log' file #
+# Please use '*' to seperate two difference sequences.                                 #
+#--------------------------------------------------------------------------------------#
 * Sequence_01
 seq01_im_blur_0.png seq01_im_sharp_0.png 0.02 0.05
 seq01_im_blur_1.png seq01_im_sharp_1.png 0.05 0.10
@@ -123,4 +123,7 @@ seq02_im_blur_2.png seq02_im_sharp_2.png 0.04 0.15
 .
 .
 ```
+If there is no corresponding sharp images (e.g., a real dataset), you can simply duplicate the path to the
+blurry image for the sharp image. More details can be found from the provided `paired_image_list.log` file
+from one of our datasets.
 
