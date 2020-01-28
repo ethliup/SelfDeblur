@@ -1,6 +1,6 @@
 # Self-Supervised Linear Motion Deblurring
 
-This repository contains the code to reproduce the results from the
+This repository contains the code and datasets to reproduce the results from the
 paper [Self-Supervised Linear Motion Deblurring (with suppl. materials)](http://people.inf.ethz.ch/liup/documents/myPapers/2020_ral_selfDeblur_final.pdf) by [Peidong Liu](http://people.inf.ethz.ch/liup/), 
 [Joel Janai](https://www.is.mpg.de/person/jjanai), [Marc Pollefeys](https://inf.ethz.ch/personal/marc.pollefeys/),
 [Torsten Sattler](https://www.chalmers.se/en/Staff/Pages/torsat.aspx) and
