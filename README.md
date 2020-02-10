@@ -20,7 +20,7 @@ and using pretrained models below.
 
 If you find our code, datatsets or paper useful, please consider citing:
 ```
-@article{LiuRAL2020,
+@article{Liu2020RAL,
   author = {Peidong Liu and Joel Janai and Marc Pollefeys and Torsten Sattler and Andreas Geiger},
   title = {Self-Supervised Linear Motion Deblurring},
   journal = {Robotics and Automation Letters},
